@@ -1,0 +1,132 @@
+Transcript Start Time:  18:22:09, 11 May 2026 Ô³íëÿíä³ÿ (ë³òî) 
+Current Directory: "C:\Users\Viacheslav"
+
+Build Time: May 27 2022 08:52:29 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v222/fluent/ntbin/win64/fluent.exe
+
+----------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                 
+----------------------------------------------------------------------------------------
+n0*   DESKTOP-TLR828Q  1/6  Windows-x64  19032  AMD Phenom(tm) II X6 1055T Processor   
+host  DESKTOP-TLR828Q       Windows-x64  20040  AMD Phenom(tm) II X6 1055T Processor   
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------------
+
+Cortex Process ID: 18544 
+License Server Path: 1055@localhost 
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v222\fluent\fluent22.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Multicore processors detected. Processor affinity set!
+Reading setting file in cache: "E:\Work B\CFD\Project\Radiator_3D_files\dp0\FFF\Fluent\FFF.set"
+
+Reading from DESKTOP-TLR828Q:"E:\Work B\CFD\Project\Radiator_3D_files\dp0\FFF\Fluent\FFF-Setup-Output.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+     1393484 cells,     1 cell zone  ...
+        1393484 tetrahedral cells,  zone id: 2
+     2856037 faces,     4 face zones ...
+        2717899 triangular interior faces,  zone id: 1
+           1318 triangular velocity-inlet faces,  zone id: 5
+           1768 triangular pressure-outlet faces,  zone id: 6
+         135052 triangular wall faces,  zone id: 7
+      267988 nodes,     1 node zone  ...
+  Done.
+
+
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	wall
+	outlet
+	inlet
+	interior-solid
+	solidSetting solid (mixture) ... Done.
+ Setting zone id of solid to 2.
+ Setting zone id of interior-solid to 1.
+ Setting zone id of inlet to 5.
+ Setting zone id of outlet to 6.
+ Setting zone id of wall to 7.
+Done.
+Setting solid (mixture) ... Done.
+Setting interior-solid (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting wall (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+
+Reading from DESKTOP-TLR828Q:"E:\Work B\CFD\Project\Radiator_3D_files\dp0\FFF\Fluent\FFF-1-00079.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy           k     epsilon     time/iter
+    79  9.6101e-04  6.1740e-06  6.1407e-06  3.4010e-06  2.8839e-07  2.5285e-05  3.0223e-05  0:00:00  100
+
+ Reversed flow on 107 faces (5.8% area) of pressure-outlet 6.
+    80  9.0143e-04  5.8004e-06  5.7458e-06  3.2020e-06  2.8691e-07  2.3201e-05  2.7732e-05  1:40:39   99
+!   80 solution is converged
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\VIACHE~1\\AppData\\Local\\Temp\\flntgz-200402 ...
+Done.
+
+Writing data to E:\\Work B\\CFD\\Project\\Radiator_3D_files\\dp0\\FFF\\Fluent\\FFF.ip ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+	k
+	epsilon
+	hyb_init-0
+	hyb_init-1
+Done.
+
+Writing to DESKTOP-TLR828Q:"E:\Work B\CFD\Project\Radiator_3D_files\dp0\FFF\Fluent\FFF-2.cas.h5" in NODE0 mode and compression level 1 ...
+     1393484 cells,     1 zone  ...
+     2856037 faces,     4 zones ...
+      267988 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to DESKTOP-TLR828Q:"E:\Work B\CFD\Project\Radiator_3D_files\dp0\FFF\Fluent\FFF-2-00080.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 1 iterations on 1 compute node
+  Average wall-clock time per iteration:               61.027 sec
+  Global reductions per iteration:                         78 ops
+  Global reductions time per iteration:                 0.000 sec (0.0%)
+  Message count per iteration:                              6 messages
+  Data transfer per iteration:                          0.000 MB
+  LE solves per iteration:                                  4 solves
+  LE wall-clock time per iteration:                    34.514 sec (56.6%)
+  LE global solves per iteration:                           0 solves
+  LE global wall-clock time per iteration:              0.000 sec (0.0%)
+  LE global matrix maximum size:                            0
+  AMG cycles per iteration:                            35.000 cycles
+  Relaxation sweeps per iteration:                      24888 sweeps
+  Relaxation exchanges per iteration:                       0 exchanges
+  LE early protections (stall) per iteration:           1.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                                    371
+
+  Total wall-clock time:                               61.027 sec
+
+Transcript Stop Time:  18:24:37, 11 May 2026 Ô³íëÿíä³ÿ (ë³òî) 
+Total Transcript Time: 2 Minute 28 Second.
